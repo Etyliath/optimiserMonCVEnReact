@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&family=Playpen+Sans:wght@400;600&display=swap');
+
+:root {
+  --main-bg-color: #EEE;
+  --main-text-color: #444;
+  --title-text-color: #1e1e1e;
+
+
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  color: var(--main-text-color);
+  background: var(--main-bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: var(--title-text-color);
+}
