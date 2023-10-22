@@ -7,16 +7,16 @@ export function Skill({ skill, levelSkill }) {
         <div
           className='progress my-2'
           role='progressbar'
-          aria-label='Basic example'
+          aria-label='skill'
           aria-valuenow={levelSkill}
           aria-valuemin='0'
           aria-valuemax='5'
-          style={{ background: '#d2d2d2' }}
+          style={{ border:'solid 1px #000' }}
         >
           <div
-            className='progress-bar  text-dark'
+            className='progress-bar'
             style={{ width: `${(levelSkill / 5) * 100}%` }}
-          ></div>
+          >{levelSkill}</div>
         </div>
       </>
     )
