@@ -2,23 +2,23 @@ import { Skill } from "../components/Skill"
 export function Home() {
   const skills = [
     {
-      name: 'compétence 1',
+      name: 'Skill 1',
       level: 3,
     },
     {
-      name: 'compétence 2',
+      name: 'Skill 2',
       level: 4,
     },
     {
-      name: 'compétence 3',
+      name: 'Skill 3',
       level: 5,
     },
     {
-      name: 'compétence 4',
+      name: 'Skill 4',
       level: 2,
     },
     {
-      name: 'compétence 5',
+      name: 'Skill 5',
       level: 5,
     },
   ]
@@ -48,9 +48,8 @@ export function Home() {
         className=''
         id='apropos'
       >
-        <div className='container'>
+        <div className='container mx-3 my-2'>
           <h2 className='text-center'>A Propos</h2>
-          <h3 className="">John DOE</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore
             ad aliquid minus voluptatibus ab veritatis id dolores
@@ -64,7 +63,7 @@ export function Home() {
           />
         </div>
 
-        <div className='container-sm'>
+        <div className='container-sm mx-3 my-2'style={{width:'60%'}}>
           {skills.map((skill) => (
             <Skill
               key={skill.name}
