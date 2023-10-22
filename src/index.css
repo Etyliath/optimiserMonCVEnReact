@@ -23,3 +23,9 @@ h6 {
   font-weight: bold;
   color: var(--title-text-color);
 }
+.icon-service:hover{
+color: #cde1f8;
+}
+.icon-service p{
+  color: var(--main-text-color);
+}
