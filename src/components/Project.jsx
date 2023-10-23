@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-export function Projects({ image, title, description, dev }) {
+export function Project({ image, title, description, dev }) {
   return (
     <div
       className='card'
@@ -19,7 +19,7 @@ export function Projects({ image, title, description, dev }) {
     </div>
   )
 }
-Projects.propTypes = {
+Project.propTypes = {
   image: PropTypes.string,
   description: PropTypes.string,
   title: PropTypes.string,

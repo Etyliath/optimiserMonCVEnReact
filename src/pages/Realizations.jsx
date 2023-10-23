@@ -1,4 +1,4 @@
-import { Projects } from '../components/Projects'
+import { Project } from '../components/Project'
 
 export function Realizations() {
   const projects = [
@@ -38,7 +38,7 @@ export function Realizations() {
       <h1 className='text-center'>Portfolio</h1>
       <div className='container-fluid row justify-content-center gap-2'>
         {projects.map((project) => (
-          <Projects
+          <Project
             key={project.title}
             image={project.image}
             title={project.title}
