@@ -1,8 +1,8 @@
-import { Services } from "./pages/Services"
+import { Realizations } from "./pages/Realizations"
 function App() {
   return (
     <>
-      <Services />
+      <Realizations />
     </>
   )
 }

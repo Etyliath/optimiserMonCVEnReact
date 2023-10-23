@@ -19,13 +19,20 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+strong {
   font-weight: bold;
   color: var(--title-text-color);
 }
-.icon-service:hover{
-color: #cde1f8;
+
+p {
+  color: var(--main-text-color);
 }
-.icon-service p{
+
+.icon-service:hover {
+  color: #cde1f8;
+}
+
+.icon-service p {
   color: var(--main-text-color);
 }
