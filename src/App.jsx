@@ -1,8 +1,9 @@
-import { Blogs } from "./pages/Blogs"
+import { Contact } from "./pages/Contact"
+
 function App() {
   return (
     <>
-      <Blogs />
+      <Contact />
     </>
   )
 }
