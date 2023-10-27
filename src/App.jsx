@@ -6,7 +6,7 @@ import { Blogs } from './pages/Blogs'
 import { Services } from './pages/Services'
 import { Contact } from './pages/Contact'
 import { Header } from './components/Header'
-
+import { Footer } from './components/Footer'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -14,6 +14,7 @@ const router = createBrowserRouter([
       <>
         <Header />
         <Home />
+        <Footer/>
       </>
     ),
   },
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       <>
         <Header />
         <Services />
+        <Footer/>
       </>
     ),
   },
@@ -32,6 +34,7 @@ const router = createBrowserRouter([
       <>
         <Header />
         <Realizations />
+        <Footer/>
       </>
     ),
   },
@@ -41,6 +44,7 @@ const router = createBrowserRouter([
       <>
         <Header />
         <Blogs />
+        <Footer/>
       </>
     ),
   },
@@ -50,6 +54,7 @@ const router = createBrowserRouter([
       <>
         <Header />
         <Contact />
+        <Footer/>
       </>
     ),
   },
@@ -59,6 +64,7 @@ const router = createBrowserRouter([
       <>
         <Header />
         <Legales />
+        <Footer/>
       </>
     ),
   },
