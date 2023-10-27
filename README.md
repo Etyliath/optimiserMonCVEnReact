@@ -11,3 +11,7 @@ Currently, two official plugins are available:
 #react-helmet
 install react-helmet pour ajouter des balise <meta/>
 npm install --save react-helmet
+
+#react-router
+install react router
+npm install react-router-dom

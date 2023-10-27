@@ -36,3 +36,10 @@ p {
 .icon-service p {
   color: var(--main-text-color);
 }
+
+.active{
+  font-weight: bold;
+}
+.nav-link:hover{
+  background: rgba(255,255,255,0.8);
+}
