@@ -45,9 +45,9 @@ export function Blogs() {
     },
   ]
   return (
-    <div className='container-fluid'>
+    <main className='container-lg'>
       <h1 className='text-center'>Blogs</h1>
-      <div className='container-fluid row gap-2 justify-content-center'>
+      <div className='container-fluid row mx-auto mb-2 justify-content-between'>
         {blogs.map((blog) => (
           <Blog
             key={blog.id}
@@ -58,6 +58,6 @@ export function Blogs() {
           />
         ))}
       </div>
-    </div>
+    </main>
   )
 }

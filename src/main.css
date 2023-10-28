@@ -8,10 +8,11 @@
 
 }
 
-body {
+body,html {
   font-family: 'Nunito Sans', sans-serif;
   color: var(--main-text-color);
   background: var(--main-bg-color);
+  height: 100%;
 }
 
 h1,
@@ -37,9 +38,19 @@ p {
   color: var(--main-text-color);
 }
 
-.active{
+.active {
   font-weight: bold;
 }
-.nav-link:hover{
-  background: rgba(255,255,255,0.8);
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.image-background {
+  background-image: url("/dev-in-action.jpg");
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: soft-light;
 }

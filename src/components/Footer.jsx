@@ -24,8 +24,9 @@ export function Footer() {
 
   return (
     <>
-      <footer className='container-lg mt-2 bg-primary bg-opacity-50'>
-        <div className='container-lg row align-items-center justify-content-center'>
+      <footer className='container-lg'>
+        <div className="bg-primary bg-opacity-25 pt-2">
+        <div className='container-lg row align-items-center mx-auto'>
           <div className='col-3'>
             <address className='d-flex flex-column text-left'>
               <p>John DOE</p>
@@ -76,7 +77,7 @@ export function Footer() {
                     className='nav-link'
                     to='/realizations'
                   >
-                    Realisations
+                    Réalisations
                   </NavLink>
                 </li>
               </ul>
@@ -101,11 +102,13 @@ export function Footer() {
             <button
               className='btn btn-outline-primary bouton-up'
               onClick={scrollToTop}
-              style={{ position: 'fixed', bottom: '20px', right: '6%' }}
+              style={{ position: 'fixed', bottom: '30px', right: '8%' }}
             >
               <i className="fa-regular fa-square-caret-up mx-1"></i>En haut
             </button>
           )}
+        </div>
+
         </div>
       </footer>
     </>
