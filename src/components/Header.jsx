@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 export function Header() {
   return (
     <>
-      <header >
-        <nav className='navbar navbar-expand-lg bg-primary' >
+      <header className='container-lg'>
+        <nav className='navbar navbar-expand-lg bg-primary bg-opacity-25' >
           <div className='container-fluid' >
             <NavLink
               className='navbar-brand'

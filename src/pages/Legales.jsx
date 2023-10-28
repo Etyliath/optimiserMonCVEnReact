@@ -8,10 +8,10 @@ export function Legales() {
           content='noindex'
         />
       </Helmet>
-      <div className='container-lg'>
+      <main className='container-lg'>
         <h1>Mentions légales</h1>
         <div
-          className='accordion'
+          className='accordion mb-2'
           id='accordionMentionsLegales'
         >
           <div className='accordion-item'>
@@ -175,7 +175,7 @@ export function Legales() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </>
   )
 }

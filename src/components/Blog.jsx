@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 export function Blog({ title, image, info, publication }) {
   return (
     <article
-      className='card col-6 p-2'
-      style={{ maxWidth: '360px' }}
+      className='card col-lg-4 col-md-6'
     >
       <h5 className='card-title'>{title}</h5>
       <div className=''>
