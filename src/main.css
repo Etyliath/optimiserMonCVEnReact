@@ -13,6 +13,8 @@ body,html {
   color: var(--main-text-color);
   background: var(--main-bg-color);
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
@@ -28,6 +30,12 @@ strong {
 
 p {
   color: var(--main-text-color);
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .icon-service:hover {
