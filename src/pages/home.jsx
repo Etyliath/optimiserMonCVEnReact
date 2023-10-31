@@ -1,3 +1,4 @@
+import { Profil } from '../components/Profil'
 import { Skill } from '../components/Skill'
 export function Home() {
   const skills = [
@@ -30,7 +31,10 @@ export function Home() {
   return (
     <main className='container-lg'>
       <div className=' '>
-        <div className='container-lg text-center image-background' style={{height:'380px'}}>
+        <div
+          className='container-lg text-center image-background'
+          style={{ height: '380px' }}
+        >
           <h1>Joe DOE</h1>
           <h2>Developper full stack junior</h2>
 
@@ -59,7 +63,7 @@ export function Home() {
               alt="dessin d'une personne"
             />
           </div>
-
+          <Profil />
           <div
             className='container-sm mx-3 my-2'
             style={{ width: '60%' }}
