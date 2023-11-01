@@ -1,71 +1,39 @@
 import { Service } from '../components/Service'
 
 export function Services() {
-  const services = [
-    {
-      id:1,
-      name: 'creation de site web',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-      icon: 'globe',
-    },
-    {
-      id:2,
-      name: 'Intégrations',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-      icon: 'cloud',
-    },
-    {
-      id:3,
-      name: 'Site responsive',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-      icon: 'mobile',
-    },
-    {
-      id:4,
-      name: 'Developement spécifique',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-      icon: 'code',
-    },
-    {
-      id:5,
-      name: 'Design & Maquette',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-      icon: 'palette',
-    },
-    {
-      id:6,
-      name: 'Administration',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-      icon: 'laptop-code',
-    },
-  ]
-
+  
   return (
-    <main className='container-lg mt-2'>
-      <div className='container-fluid mx-2'>
-        <h1 className='text-start'>Mes Services</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rem
-          dolores adipisci blanditiis, qui doloribus ad dolore a aliquid
-          doloremque ea similique incidunt, molestiae temporibus officia
-          aspernatur! Tempore, sed quam.
-        </p>
+    <main className='container-lg'>
+      <div className="container-lg img-fluid p-0">
+        <img src="/background-2672565_1280-crop.jpg" alt="" className="img-fluid" />
       </div>
-      <div className='container-lg mx-auto text-end row'>
-        {services.map((service) => (
+      <div className='container-sm mx-auto'>
+        <h1 className='text-center text-uppercase'>Mon offre de services</h1>
+        <p className='text-center mx-auto'>
+          Voici les prestations sur lesquelles je peux intervenir
+        </p>
+        <div className='mx-auto border-bottom border-4 border-primary' style={{width:'25%'}}></div>
+      </div>
+      <div className=' row align-items-center justify-content-around gap-1 mt-5'>
+       
           <Service
-            key={service.id}
-            nameService={service.name}
-            description={service.description}
-            icon={service.icon}
+            icon={'desktop'}
+            nameService={'UX Design'}
+            description={"L'UX Design est une méthode de conception centrée sur l'utilisateur. Son but est d'offrir une exprience de navigation optimale à l'internaute"}
+            
           />
-        ))}
+         <Service
+            icon={'file-code'}
+            nameService={'Développement web'}
+            description={"Le dévemoppement de sites web repose sur l'utilisation des langages HTML, CSS, JavaScript et PHP."}
+            
+          />
+          <Service
+            icon={'magnifying-glass-dollar'}
+            nameService={'Référencement'}
+            description={"Le référencement naturel d'un site, aussi appelé SEO, consiste à mettre des technique en oeuvre pour améliorer sa position dans les resultats des moteurs de recherche."}
+            
+          />
       </div>
     </main>
   )

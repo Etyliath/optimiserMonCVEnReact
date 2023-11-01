@@ -4,7 +4,7 @@ export function Header() {
   return (
     <>
       <header className='container-lg'>
-        <nav className='navbar navbar-expand-lg bg-primary bg-opacity-25' >
+        <nav className='navbar navbar-expand-lg bg-dark' data-bs-theme="dark">
           <div className='container-fluid' >
             <NavLink
               className='navbar-brand'
@@ -28,6 +28,14 @@ export function Header() {
               id='navbarNav'
             >
               <ul className='navbar-nav ms-auto'>
+              <li className='nav-item'>
+                  <NavLink
+                    className='nav-link'
+                    to='/'
+                  >
+                    Accueil
+                  </NavLink>
+                </li>
                 <li className='nav-item'>
                   <NavLink
                     className='nav-link'
@@ -41,7 +49,7 @@ export function Header() {
                     className='nav-link'
                     to='/realizations'
                   >
-                    Realisations
+                    Réalisations
                   </NavLink>
                 </li>
                 <li className='nav-item'>
@@ -49,7 +57,7 @@ export function Header() {
                     className='nav-link'
                     to='/blogs'
                   >
-                    Blogs
+                    Blog
                   </NavLink>
                 </li>
                 <li className='nav-item'>
@@ -57,15 +65,7 @@ export function Header() {
                     className='nav-link'
                     to='/contact'
                   >
-                    Contact
-                  </NavLink>
-                </li>
-                <li className='nav-item'>
-                  <NavLink
-                    className='nav-link'
-                    to='/legales'
-                  >
-                    Mentions Légales
+                    Me Contacter
                   </NavLink>
                 </li>
               </ul>

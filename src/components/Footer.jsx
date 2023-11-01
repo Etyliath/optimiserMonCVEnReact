@@ -25,7 +25,7 @@ export function Footer() {
   return (
     <>
       <footer className='container-lg mt-auto'>
-        <div className='bg-primary bg-opacity-25 pt-2'>
+        <div className='pt-2'>
           <div className='container-lg row align-items-center mx-auto'>
             <div className='col-lg-3 col-md-6'>
               <address className='d-flex flex-column text-left m-0'>
@@ -124,7 +124,7 @@ export function Footer() {
             </div>
           </div>
           <div className='container-fluid mt-1' >
-            <p className='text-center mt-1 pb-1'>(c) Copyright 2023 John DOE</p>
+            <p className='text-center mt-1 pb-1 bg-dark text-white'data-bs-theme="dark">(c) Copyright 2023 John DOE</p>
             {visible && (
               <button
                 className='btn btn-outline-primary bouton-up'

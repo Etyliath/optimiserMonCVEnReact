@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { Legales } from './pages/Legales'
 import { Realizations } from './pages/Realizations'
@@ -13,64 +13,70 @@ const router = createBrowserRouter([
     path: '/',
     element: (
       <>
-        <Header />
-        <Home />
-        <Footer/>
+        <Root />
       </>
     ),
-  },
-  {
-    path: '/services',
-    element: (
-      <>
-        <Header />
-        <Services />
-        <Footer/>
-      </>
-    ),
-  },
-  {
-    path: '/realizations',
-    element: (
-      <>
-        <Header />
-        <Realizations />
-        <Footer/>
-      </>
-    ),
-  },
-  {
-    path: '/blogs',
-    element: (
-      <>
-        <Header />
-        <Blogs />
-        <Footer/>
-      </>
-    ),
-  },
-  {
-    path: '/contact',
-    element: (
-      <>
-        <Header />
-        <Contact />
-        <Footer/>
-      </>
-    ),
-  },
-  {
-    path: '/legales',
-    element: (
-      <>
-        <Header />
-        <Legales />
-        <Footer/>
-      </>
-    ),
+    children: [
+      {
+        path: '/',
+        element: (
+          <>
+            <Home />
+          </>
+        ),
+      },
+      {
+        path: '/services',
+        element: (
+          <>
+            <Services />
+          </>
+        ),
+      },
+      {
+        path: '/realizations',
+        element: (
+          <>
+            <Realizations />
+          </>
+        ),
+      },
+      {
+        path: '/blogs',
+        element: (
+          <>
+            <Blogs />
+          </>
+        ),
+      },
+      {
+        path: '/contact',
+        element: (
+          <>
+            <Contact />
+          </>
+        ),
+      },
+      {
+        path: '/legales',
+        element: (
+          <>
+            <Legales />
+          </>
+        ),
+      },
+    ],
   },
 ])
-
+function Root() {
+  return (
+    <>
+      <Header />
+      <Outlet />
+      <Footer />
+    </>
+  )
+}
 function App() {
   return (
     <>

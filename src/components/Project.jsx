@@ -2,21 +2,20 @@ import PropTypes from 'prop-types'
 
 export function Project({ image, title, description, dev }) {
   return (
-    <div className='card col-lg-4 col-md-6'>
-      <div className='row g-0'>
-        <div className='col-md-4 my-auto'>
-          <img
-            src={image}
-            className='img-fluid rounded-start'
-            alt='...'
-          />
+    <div className='col-lg-4 col-md-6'>
+      <div className='card h-100'>
+        <img
+          src={image}
+          className='card-img-top'
+          alt='...'
+        />
+        <div className='align-items-center d-flex flex-column'>
+          <h5 className='text-center'>{title}</h5>
+          <p className='text-center'>{description}</p>
+          <button className='btn btn-outline-primary mb-3 mx-auto top-50'>Voir</button>
         </div>
-        <div className='col-md-8'>
-          <div className='card-body'>
-            <h5 className=''>{title}</h5>
-            <p className=''>{description}</p>
-            <p style={{ fontStyle: 'italic' }}>{dev}</p>
-          </div>
+        <div className='card-footer'>
+          <small className='text-body-secondary'>{dev}</small>
         </div>
       </div>
     </div>
