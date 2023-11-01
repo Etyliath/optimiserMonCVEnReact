@@ -1,33 +1,31 @@
 import PropTypes from 'prop-types'
 
-export function Blog({ title, image, info, publication }) {
+export function Blog({ title, image, publication, broadcast }) {
   return (
     <article
-      className='card col-lg-4 col-md-6'
+      className='col-lg-4 col-md-6 mb-4'
     >
-      <h5 className='card-title'>{title}</h5>
-      <div className=''>
-          <img
-            src={image}
-            className='img-fluid rounded-start'
-            alt='...'
-          />
+     <div className='card h-100'>
+        <img
+          src={image}
+          className='card-img-top'
+          alt='...'
+        />
+        <div className='align-items-center'>
+          <h5 className=''>{title}</h5>
+          <p className=''>{publication}</p>
+          <button className='btn btn-primary mb-3'>Lire la suite</button>
         </div>
-        <div className=''>
-          <div className='card-body p-2'>
-            
-            <p className='card-text'>{info}</p>
-            <p className='card-text'>
-              <small className='text-body-secondary'>{publication}</small>
-            </p>
-          </div>
+        <div className='card-footer'>
+          <small className='text-body-secondary'>{broadcast}</small>
         </div>
+      </div>
     </article>
   )
 }
 Blog.propTypes = {
   image: PropTypes.string,
-  info: PropTypes.string,
+  broadcast: PropTypes.string,
   title: PropTypes.string,
   publication: PropTypes.string,
 }

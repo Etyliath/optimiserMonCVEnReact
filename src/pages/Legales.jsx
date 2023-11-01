@@ -24,7 +24,7 @@ export function Legales() {
                 aria-expanded='true'
                 aria-controls='collapseOne'
               >
-                1-Présentations du site
+                Editeur du site
               </button>
             </h2>
             <div
@@ -33,11 +33,7 @@ export function Legales() {
               data-bs-parent='#accordionMentionsLegales'
             >
               <div className='accordion-body'>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Ducimus culpa libero est, nobis necessitatibus, voluptas alias
-                earum accusantium pariatur perspiciatis sed! Adipisci,
-                doloremque hic corporis tempore accusamus similique vero
-                quisquam.
+                John DOE
               </div>
             </div>
           </div>
@@ -51,8 +47,7 @@ export function Legales() {
                 aria-expanded='false'
                 aria-controls='collapseTwo'
               >
-                2-Condifitions générales d'utilisation du site et des services
-                proposés
+               Hébergeur
               </button>
             </h2>
             <div
@@ -61,10 +56,7 @@ export function Legales() {
               data-bs-parent='#accordionMentionsLegales'
             >
               <div className='accordion-body'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                aperiam totam voluptate obcaecati sunt. Perspiciatis nisi eum
-                itaque laudantium reiciendis mollitia dolorem quae vero,
-                voluptates incidunt dolorum! Consequatur, aliquid provident!
+               Always Data
               </div>
             </div>
           </div>
@@ -78,7 +70,7 @@ export function Legales() {
                 aria-expanded='false'
                 aria-controls='collapseThree'
               >
-                3-Descriptions des service fournis
+                Ceédits
               </button>
             </h2>
             <div
@@ -87,90 +79,9 @@ export function Legales() {
               data-bs-parent='#accordionMentionsLegales'
             >
               <div className='accordion-body'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                aliquam vitae sunt quis voluptatum in! Nostrum, eveniet est
-                ratione nesciunt perferendis, non quibusdam quod dolor itaque
-                reiciendis, dolore laborum dolorem?
-              </div>
-            </div>
-          </div>
-          <div className='accordion-item'>
-            <h2 className='accordion-header'>
-              <button
-                className='accordion-button collapsed'
-                type='button'
-                data-bs-toggle='collapse'
-                data-bs-target='#collapseFour'
-                aria-expanded='false'
-                aria-controls='collapseFour'
-              >
-                4-Limitations contractuelles sur les données techniques
-              </button>
-            </h2>
-            <div
-              id='collapseFour'
-              className='accordion-collapse collapse'
-              data-bs-parent='#accordionMentionsLegales'
-            >
-              <div className='accordion-body'>
-                Le site utilise la technologie JavaScript.<br/> Le site Internet ne
-                pourra être tenu responsable de dommages matériels liés à
-                l'utilisation du site. De plus, l'utilisateur du site s'engage à
-                accéder au site en utilisant un matériel récent, ne contenant
-                pas de virus et avec un navigateur de dernière génération
-                mis-à-jour.
-              </div>
-            </div>
-          </div>
-          <div className='accordion-item'>
-            <h2 className='accordion-header'>
-              <button
-                className='accordion-button collapsed'
-                type='button'
-                data-bs-toggle='collapse'
-                data-bs-target='#collapseFive'
-                aria-expanded='false'
-                aria-controls='collapseFive'
-              >
-                5-Gestions des données personnelles
-              </button>
-            </h2>
-            <div
-              id='collapseFive'
-              className='accordion-collapse collapse'
-              data-bs-parent='#accordionMentionsLegales'
-            >
-              <div className='accordion-body'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                aliquam vitae sunt quis voluptatum in! Nostrum, eveniet est
-                ratione nesciunt perferendis, non quibusdam quod dolor itaque
-                reiciendis, dolore laborum dolorem?
-              </div>
-            </div>
-          </div>
-          <div className='accordion-item'>
-            <h2 className='accordion-header'>
-              <button
-                className='accordion-button collapsed'
-                type='button'
-                data-bs-toggle='collapse'
-                data-bs-target='#collapseSix'
-                aria-expanded='false'
-                aria-controls='collapseSix'
-              >
-                6-Droits sur les images utilisées
-              </button>
-            </h2>
-            <div
-              id='collapseSix'
-              className='accordion-collapse collapse'
-              data-bs-parent='#accordionMentionsLegales'
-            >
-              <div className='accordion-body'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                aliquam vitae sunt quis voluptatum in! Nostrum, eveniet est
-                ratione nesciunt perferendis, non quibusdam quod dolor itaque
-                reiciendis, dolore laborum dolorem?
+                <p>Site développé par John Doe, étudiants au CEF.</p>
+                <p>Les images libres de droit sont issues du site <a className='text-decoration-none text-primary' href="https://pixabay.com/fr/" target="_blank" rel="noopener noreferrer">Pixabay</a> </p>
+                
               </div>
             </div>
           </div>

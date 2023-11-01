@@ -8,7 +8,8 @@
 
 }
 
-body,html {
+body,
+html {
   font-family: 'Nunito Sans', sans-serif;
   color: var(--main-text-color);
   background: var(--main-bg-color);
@@ -32,18 +33,18 @@ p {
   color: var(--main-text-color);
 }
 
-#root{
+#root {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
+/* .icon-service {
+  color: #0d6efd;
+} */
+
 .icon-service:hover {
   color: #cde1f8;
-}
-
-.icon-service p {
-  color: var(--main-text-color);
 }
 
 .active {
@@ -55,10 +56,11 @@ p {
 }
 
 .image-background {
-  background-image: url("/dev-in-action.jpg");
-  height: 100%;
+  background-image: url("/man-1839500_1280.jpg");
+  height: 550px;
   background-size: cover;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.3);
-  background-blend-mode: soft-light;
+  background-color: rgba(0, 0, 0, 1);
+  background-blend-mode: screen;
+  color: white;
 }
