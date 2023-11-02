@@ -55,12 +55,3 @@ p {
   background: rgba(255, 255, 255, 0.8);
 }
 
-.image-background {
-  background-image: url("/man-1839500_1280.jpg");
-  height: 550px;
-  background-size: cover;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 1);
-  background-blend-mode: screen;
-  color: white;
-}

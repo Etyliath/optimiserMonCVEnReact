@@ -24,22 +24,21 @@ export function Footer() {
 
   return (
     <>
-      <footer className='container-lg mt-auto'>
+      <footer className='container-lg px-0 mt-auto'>
         <div className='pt-2'>
           <div className='container-lg row align-items-center mx-auto'>
-            <div className='col-lg-3 col-md-6'>
-              <address className='d-flex flex-column text-left m-0'>
-                <p className='mb-1'>John DOE</p>
-                <p>
-                  <i className='fa-solid fa-phone'></i> +33606060606
+            <div className='col-lg-3 col-md-6 py-4'>
+              <div className='d-flex flex-column text-left m-0'>
+                <h6 className='mb-1'>John DOE</h6>
+                <p className='m-0'>
+                  40 Rue Laure Diebold
+                  <br />
+                  69009 Lyon, France
+                  <br />
+                  Téléphone: 06 20 30 40
                 </p>
-                <p className='mb-1'>
-                  <i className='bi bi-mailbox-flag'></i> 155 All. du Phare,
-                  17590 Saint-Clément-des-Baleines
-                </p>
-              </address>
+              </div>
               <div className='d-flex'>
-                {' '}
                 <a
                   className='mx-1 text-dark'
                   href='https://github.com/github-john-doe'
@@ -67,64 +66,68 @@ export function Footer() {
               </div>
             </div>
             <div className='col-lg-3 col-md-6'>
-              <nav>
-                <ul className='navbar-nav ms-auto'>
-                  <li className='nav-item'>
-                    <NavLink
-                      className='nav-link'
-                      to='/services'
-                    >
-                      Services
-                    </NavLink>
-                  </li>
-                  <li className='nav-item'>
-                    <NavLink
-                      className='nav-link'
-                      to='/contact'
-                    >
-                      Contact
-                    </NavLink>
-                  </li>
-                  <li className='nav-item'>
-                    <NavLink
-                      className='nav-link'
-                      to='/legales'
-                    >
-                      Mentions Légales
-                    </NavLink>
-                  </li>
-                </ul>
-              </nav>
+            <NavLink
+                className='nav-link'
+                to='/'
+              >
+                <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
+                Accueil
+              </NavLink>
+              <NavLink
+                className='nav-link'
+                to='/#apropos'
+              >
+                <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
+                A propos
+              </NavLink>
+              <NavLink
+                className='nav-link'
+                to='/services'
+              >
+                <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
+                Services
+              </NavLink>
+              <NavLink
+                className='nav-link'
+                to='/contact'
+              >
+                <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
+                Me contacter
+              </NavLink>
+              <NavLink
+                className='nav-link'
+                to='/legales'
+              >
+                <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
+                Mentions légales
+              </NavLink>
             </div>
             <div className='col-lg-3 col-md-6'>
-              <nav>
-                <ul className='navbar-nav ms-auto'>
-                  <li className='nav-item'>
-                    <NavLink
-                      className='nav-link'
-                      to='/realizations'
-                    >
-                      Réalisations
-                    </NavLink>
-                  </li>
-                </ul>
-              </nav>
+            <NavLink
+                className='nav-link'
+                to='/realizations'
+              >
+                <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
+                Réalisations
+              </NavLink>
             </div>
             <div className='col-lg-3 col-md-6'>
-              <ul className='navbar-nav ms-auto'>
-                <li className='nav-item'>
-                  <NavLink
-                    className='nav-link'
-                    to='/blogs'
-                  >
-                    Blogs
-                  </NavLink>
-                </li>
-              </ul>
+            <NavLink
+                className='nav-link'
+                to='/blogs'
+              >
+                <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
+                Blogs
+              </NavLink>
             </div>
           </div>
-          <div className='container-fluid mt-1' >
-            <p className='text-center mt-1 pb-1 bg-dark text-white'data-bs-theme="dark">(c) Copyright 2023 John DOE</p>
+          <div className='container-fluid mt-1 px-0'>
+            <p
+              className='text-center mt-1 py-2 bg-dark text-white'
+              data-bs-theme='dark'
+            >
+              <i className="fa-regular fa-copyright pe-1"></i>2023 designed by John Doe
+            </p>
             {visible && (
               <button
                 className='btn btn-outline-primary bouton-up'

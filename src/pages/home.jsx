@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Skill } from '../components/Skill'
 
 export function Home() {
@@ -6,52 +7,63 @@ export function Home() {
       id: 1,
       name: 'HTML',
       level: 90,
-      color:'bg-danger'
+      color: 'bg-danger',
     },
     {
       id: 2,
       name: 'CSS3',
       level: 80,
-      color:'bg-info'
+      color: 'bg-info',
     },
     {
       id: 3,
       name: 'JAVASCRIPT',
       level: 70,
-      color:'bg-warning'
+      color: 'bg-warning',
     },
     {
       id: 4,
       name: 'PHP',
       level: 60,
-      color:'bg-success'
+      color: 'bg-success',
     },
     {
       id: 5,
       name: 'REACT',
       level: 50,
-      color:'bg-primary'
+      color: 'bg-primary',
     },
   ]
   return (
     <>
-      <main className='container-lg d-flex flex-column'>
+      <main className='container-lg d-flex flex-column px-0' style={{background:'#F8F9FB'}}>
         <div
-          className=' d-flex flex-column flex-grow-1 align-items-center justify-content-center image-background py-2'
+          className='container-lg'
+          style={{
+            background: 'url("/man-1839500_1280.jpg") no-repeat',
+            height: '90vh',
+            overflow: 'hidden',
+            backgroundSize:'cover',
+            backgroundColor: 'rgba(0,0,0,0.8)',
+            backgroundBlendMode: 'soft-light',
+          }}
         >
-          <h1>Bonjour, Je suis John DOE</h1>
-          <h2>Développer web full stack</h2>
+          <div className='d-flex flex-column flex-grow-1 align-items-center justify-content-center py-2 h-100'>
+            <h1 className='text-white'>Bonjour, Je suis John DOE</h1>
+            <h2 className='text-white'>Développer web full stack</h2>
 
-          <a
-            href='#apropos'
-            className='btn btn-primary my-1'
-          >
-            En savoir plus
-          </a>
+            <a
+              href='#apropos'
+              className='btn btn-primary my-1'
+            >
+              En savoir plus
+            </a>
+          </div>
         </div>
         <section
-          className='container-lg mt-4'
+          className='container-lg p-5'
           id='apropos'
+          
         >
           <div className='container border shadow d-flex gap-1 justify-content-between bg-white'>
             <div className='container'>
@@ -96,7 +108,6 @@ export function Home() {
           </div>
         </section>
       </main>
-      {/* <Footer /> */}
     </>
   )
 }
