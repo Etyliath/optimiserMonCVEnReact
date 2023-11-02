@@ -11,7 +11,7 @@ export function Blog({ title, image, publication, broadcast }) {
           className='card-img-top'
           alt='...'
         />
-        <div className='align-items-center'>
+        <div className='align-items-center p-2'>
           <h5 className=''>{title}</h5>
           <p className=''>{publication}</p>
           <button className='btn btn-primary mb-3'>Lire la suite</button>

@@ -8,8 +8,17 @@ export function Legales() {
           content='noindex'
         />
       </Helmet>
-      <main className='container-lg'>
-        <h1>Mentions légales</h1>
+      <main
+        className='container-lg d-flex flex-column px-0'
+        style={{ height: '100%', background: '#F8F9FB' }}
+      >
+        <div className='container-sm mx-auto py-5'>
+          <h1 className='text-center text-uppercase'>Mentions légales</h1>
+          <div
+            className='mx-auto border-bottom border-4 border-primary'
+            style={{ width: '25%' }}
+          ></div>
+        </div>{' '}
         <div
           className='accordion mb-2'
           id='accordionMentionsLegales'
@@ -33,7 +42,26 @@ export function Legales() {
               data-bs-parent='#accordionMentionsLegales'
             >
               <div className='accordion-body'>
-                John DOE
+                <h2>John DOE</h2>
+                <p className='m-0'>
+                  <i className='fa-solid fa-location-dot p-1'></i>40 Rue Laure
+                  Diebold
+                  <br />
+                  69009 Lyon, France
+                </p>
+                <a
+                  href='tel:+33620304050'
+                  className='text-decoration-none mb-2'
+                >
+                  <i className='fa-solid fa-mobile p-1'></i> +33620304050
+                </a>
+                <br />
+                <a
+                  href='mailto:john.doe@gmail.com'
+                  className='text-decoration-none mb-2'
+                >
+                  <i className='fa-solid fa-envelope p-1'></i>john.doe@gmail.com
+                </a>
               </div>
             </div>
           </div>
@@ -47,7 +75,7 @@ export function Legales() {
                 aria-expanded='false'
                 aria-controls='collapseTwo'
               >
-               Hébergeur
+                Hébergeur
               </button>
             </h2>
             <div
@@ -56,7 +84,20 @@ export function Legales() {
               data-bs-parent='#accordionMentionsLegales'
             >
               <div className='accordion-body'>
-               Always Data
+                <h2>Always Data</h2>
+                <p className='m-0'>
+                  91 Rue du Faubours Saint-Honoré
+                  <br />
+                  75008 Paris, France
+                </p>
+                <a
+                  className='text-decoration-none mb-2'
+                  href='http://www.alwaysdata.com'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <i className='fa-solid fa-globe'></i>www.alwaysdata.com
+                </a>
               </div>
             </div>
           </div>
@@ -70,7 +111,7 @@ export function Legales() {
                 aria-expanded='false'
                 aria-controls='collapseThree'
               >
-                Ceédits
+                Crédits
               </button>
             </h2>
             <div
@@ -80,8 +121,17 @@ export function Legales() {
             >
               <div className='accordion-body'>
                 <p>Site développé par John Doe, étudiants au CEF.</p>
-                <p>Les images libres de droit sont issues du site <a className='text-decoration-none text-primary' href="https://pixabay.com/fr/" target="_blank" rel="noopener noreferrer">Pixabay</a> </p>
-                
+                <p>
+                  Les images libres de droit sont issues du site{' '}
+                  <a
+                    className='text-decoration-none text-primary'
+                    href='https://pixabay.com/fr/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Pixabay
+                  </a>{' '}
+                </p>
               </div>
             </div>
           </div>

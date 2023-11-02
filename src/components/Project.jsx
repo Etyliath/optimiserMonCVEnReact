@@ -9,7 +9,7 @@ export function Project({ image, title, description, dev }) {
           className='card-img-top'
           alt='...'
         />
-        <div className='align-items-center d-flex flex-column'>
+        <div className='align-items-center d-flex flex-column px-1'>
           <h5 className='text-center'>{title}</h5>
           <p className='text-center'>{description}</p>
           <button className='btn btn-outline-primary mb-3 mx-auto top-50'>Voir</button>
