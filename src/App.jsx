@@ -7,6 +7,7 @@ import { Services } from './pages/Services'
 import { Contact } from './pages/Contact'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
+import { PageError } from './pages/PageError'
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
         <Root />
       </>
     ),
+    errorElement: <PageError />,
     children: [
       {
         path: '/',
