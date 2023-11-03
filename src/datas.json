@@ -1,4 +1,36 @@
 {
+  "skills": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "level": 90,
+      "color": "bg-danger"
+    },
+    {
+      "id": 2,
+      "name": "CSS3",
+      "level": 80,
+      "color": "bg-info"
+    },
+    {
+      "id": 3,
+      "name": "JAVASCRIPT",
+      "level": 70,
+      "color": "bg-warning"
+    },
+    {
+      "id": 4,
+      "name": "PHP",
+      "level": 60,
+      "color": "bg-success"
+    },
+    {
+      "id": 5,
+      "name": "REACT",
+      "level": 50,
+      "color": "bg-primary"
+    }
+  ],
   "articles": [
     {
       "id": 1,
@@ -41,6 +73,29 @@
       "image": "/web-3157323_640.jpg",
       "publication": "This is a wider card with supporting text below as a natural lead-in to additional content.",
       "broadcast": "Publié le : 28 juillet 2023"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Fresh food",
+      "image": "/vegetables-790022_640.jpg",
+      "description": "Réalisation d'un site avec commande en ligne.",
+      "dev": "Site réalisé avec PHP et MySQL"
+    },
+    {
+      "id": 2,
+      "title": "Restaurant Akira",
+      "image": "/sushi-354628_640.jpg",
+      "description": "Réalisation d'un site vitrine.",
+      "dev": "Site réalisé avec WordPress"
+    },
+    {
+      "id": 3,
+      "title": "Espace bien-être",
+      "image": "/hand-3751159_640.jpg",
+      "description": "Réalisation d'un site vitrine pour un praticien du bien-être",
+      "dev": "Site réalisé en HTML/CSS"
     }
   ]
 }

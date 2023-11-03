@@ -9,7 +9,8 @@ import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { PageError } from './pages/PageError'
 import { SingleArticle } from './pages/SingleArticle'
-import {Profil} from './pages/Profil'
+import { Profil } from './pages/Profil'
+import { SingleProject } from './pages/SignleProject'
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,10 @@ const router = createBrowserRouter([
       },
       {
         path: '/realizations',
-        element: <Realizations />,
+        children: [
+          { path: '', element: <Realizations /> },
+          { path: ':id', element: <SingleProject /> },
+        ],
       },
       {
         path: '/blog',

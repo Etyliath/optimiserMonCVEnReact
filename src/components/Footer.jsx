@@ -22,7 +22,7 @@ export function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
   }
-
+  console.log(datas.articles.length)
   return (
     <>
       <footer className='container-lg px-0 mt-auto'>
@@ -108,34 +108,48 @@ export function Footer() {
             <h6 className='mb-1'>Mes dernières réalisations</h6>
             <NavLink
                 className='nav-link'
-                to='/realizations'
+                to={`/realizations/${datas.projects.length}`}
               >
                 <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
-                Réalisations
+                {datas.projects[datas.projects.length-1].title}
+              </NavLink>
+              <NavLink
+                className='nav-link'
+                to={`/realizations/${datas.projects.length-1}`}
+              >
+                <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
+                {datas.projects[datas.projects.length-2].title}
+              </NavLink>
+              <NavLink
+                className='nav-link'
+                to={`/realizations/${datas.projects.length-2}`}
+              >
+                <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
+                {datas.projects[datas.projects.length-3].title}
               </NavLink>
             </div>
             <div className='col-lg-3 col-md-6 py-4'>
             <h6 className='mb-1'>Mes derniers articles</h6>
             <NavLink
                 className='nav-link'
-                to='/blog/6'
+                to={`/blog/${datas.articles.length}`}
               >
                 <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
-                {datas.articles[5].title}
+                {datas.articles[datas.articles.length-1].title}
               </NavLink>
               <NavLink
                 className='nav-link'
-                to='/blog/5'
+                to={`/blog/${datas.articles.length-1}`}
               >
                 <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
-                {datas.articles[4].title}
+                {datas.articles[datas.articles.length-2].title}
               </NavLink>
               <NavLink
                 className='nav-link'
-                to='/blog/4'
+                to={`/blog/${datas.articles.length-2}`}
               >
                 <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
-                {datas.articles[3].title}
+                {datas.articles[datas.articles.length-3].title}
               </NavLink>
             </div>
           </div>
