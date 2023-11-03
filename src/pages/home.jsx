@@ -44,7 +44,7 @@ export function Home() {
             height: '90vh',
             overflow: 'hidden',
             backgroundSize:'cover',
-            backgroundColor: 'rgba(0,0,0,0.8)',
+            backgroundColor: 'rgba(0,0,0,0.3)',
             backgroundBlendMode: 'soft-light',
           }}
         >
@@ -96,6 +96,7 @@ export function Home() {
                   alt='homme a un bureau'
                 />
               </div>
+              <h2>Mes compétences</h2>
               {skills.map((skill) => (
                 <Skill
                   key={skill.id}

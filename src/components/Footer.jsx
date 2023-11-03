@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import datas from '../datas.json'
 
 export function Footer() {
   const [visible, setVisible] = useState(false)
@@ -117,10 +118,24 @@ export function Footer() {
             <h6 className='mb-1'>Mes derniers articles</h6>
             <NavLink
                 className='nav-link'
-                to='/blogs'
+                to='/blog/6'
               >
                 <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
-                Blogs
+                {datas.articles[5].title}
+              </NavLink>
+              <NavLink
+                className='nav-link'
+                to='/blog/5'
+              >
+                <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
+                {datas.articles[4].title}
+              </NavLink>
+              <NavLink
+                className='nav-link'
+                to='/blog/4'
+              >
+                <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
+                {datas.articles[3].title}
               </NavLink>
             </div>
           </div>

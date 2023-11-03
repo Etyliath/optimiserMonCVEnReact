@@ -18,7 +18,6 @@ export function Contact() {
     const telephone = data.get('telephone').toString().trim()
     const sujet = data.get('sujet').toString().trim()
     const message = data.get('message').toString().trim()
-    console.log(name, email, telephone, message)
     if (
       name === '' ||
       email === '' ||
