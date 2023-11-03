@@ -8,64 +8,51 @@ import { Contact } from './pages/Contact'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { PageError } from './pages/PageError'
+import { SingleArticle } from './pages/SingleArticle'
+import {Profil} from './pages/Profil'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: (
-      <>
-        <Root />
-      </>
-    ),
+    element: <Root />,
     errorElement: <PageError />,
     children: [
       {
         path: '/',
-        element: (
-          <>
-            <Home />
-          </>
-        ),
+        element: <Home />,
       },
       {
         path: '/services',
-        element: (
-          <>
-            <Services />
-          </>
-        ),
+        element: <Services />,
       },
       {
         path: '/realizations',
-        element: (
-          <>
-            <Realizations />
-          </>
-        ),
+        element: <Realizations />,
       },
       {
         path: '/blog',
-        element: (
-          <>
-            <Blog />
-          </>
-        ),
+        children: [
+          {
+            path: '',
+            element: <Blog />,
+          },
+          {
+            path: ':id',
+            element: <SingleArticle />,
+          },
+        ],
       },
       {
         path: '/contact',
-        element: (
-          <>
-            <Contact />
-          </>
-        ),
+        element: <Contact />,
       },
       {
         path: '/legales',
-        element: (
-          <>
-            <Legales />
-          </>
-        ),
+        element: <Legales />,
+      },
+      {
+        path: '/profil',
+        element: <Profil />,
       },
     ],
   },
@@ -80,11 +67,7 @@ function Root() {
   )
 }
 function App() {
-  return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  )
+  return <RouterProvider router={router} />
 }
 
 export default App

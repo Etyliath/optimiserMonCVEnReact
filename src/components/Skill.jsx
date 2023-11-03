@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 export function Skill({ skill, levelSkill, color }) {
   return (
     <>
-      <h6 className='my-1'> {skill} {levelSkill}%</h6>
+      <h6 className='mb-1 mt-3'> {skill} {levelSkill}%</h6>
       <div
         className='progress'
         role='progressbar'

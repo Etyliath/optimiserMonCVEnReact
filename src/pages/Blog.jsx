@@ -1,55 +1,7 @@
 import { Article } from '../components/Article'
+import datas from '../datas.json'
+
 export function Blog() {
-  const blogs = [
-    {
-      id: 1,
-      title: 'Codez son site en HTML/CSS',
-      image: '/technology-1283624_640.jpg',
-      publication:
-        'This is a wider card with supporting text below as a natural lead-in to additional content.',
-      broadcast: 'Publié le : 28 octobre 2023',
-    },
-    {
-      id: 2,
-      title: 'Vendre ses produits sur le web',
-      image: '/money-2724241_640.jpg',
-      publication:
-        'This is a wider card with supporting text below as a natural lead-in to additional content.',
-      broadcast: 'Publié le : 15 octobre 2023',
-    },
-    {
-      id: 3,
-      title: 'Se positionner sur Google',
-      image: '/macbook-459196_640.jpg',
-      publication:
-        'This is a wider card with supporting text below as a natural lead-in to additional content.',
-      broadcast: 'Publié le : 26 steptembre 2023',
-    },
-    {
-      id: 4,
-      title: 'Coder en responsive design',
-      image: '/technology-791029_640.jpg',
-      publication:
-        'This is a wider card with supporting text below as a natural lead-in to additional content.',
-      broadcast: 'Publié le : 10 steptembre 2023',
-    },
-    {
-      id: 5,
-      title: 'Technique de référencement',
-      image: '/search-engine-optimization-3014143_640.jpg',
-      publication:
-        'This is a wider card with supporting text below as a natural lead-in to additional content.',
-      broadcast: 'Publié le : 20 aout 2023',
-    },
-    {
-      id: 6,
-      title: 'Aprendre à coder',
-      image: '/web-3157323_640.jpg',
-      publication:
-        'This is a wider card with supporting text below as a natural lead-in to additional content.',
-      broadcast: 'Publié le : 28 juillet 2023',
-    },
-  ]
   return (
     <main
       className='container-lg px-0'
@@ -76,13 +28,13 @@ export function Blog() {
         ></div>
       </div>
       <div className='row align-items-center mt-5 mx-auto'>
-        {blogs.map((blog) => (
+        {datas.articles.map((article) => (
           <Article
-            key={blog.id}
-            title={blog.title}
-            image={blog.image}
-            publication={blog.publication}
-            broadcast={blog.broadcast}
+            key={article.id}
+            title={article.title}
+            image={article.image}
+            publication={article.publication}
+            broadcast={article.broadcast}
           />
         ))}
       </div>
