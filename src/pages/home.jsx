@@ -65,8 +65,8 @@ export function Home() {
           id='apropos'
           
         >
-          <div className='container border shadow d-flex gap-1 flex-wrap justify-content-between bg-white'>
-            <div className='container'>
+          <div className='container border shadow row gap-1 justify-content-between bg-white'>
+            <div className='container col-lg-5 col-md-5 col-sm-6'>
               <h2 className='border-bottom border-3 border-primary p-2 my-5'>
                 A propos
               </h2>
@@ -88,7 +88,7 @@ export function Home() {
                 j'écris et que je respecte les bonnes pratiques du web
               </p>
             </div>
-            <div className='container my-5'>
+            <div className='container col-lg-5 col-md-5 col-sm-6 py-5'>
               <div>
                 <img
                   className='img-fluid img-thumbnail rounded'
