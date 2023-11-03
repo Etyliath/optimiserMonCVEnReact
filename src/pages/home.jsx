@@ -49,7 +49,7 @@ export function Home() {
           }}
         >
           <div className='d-flex flex-column flex-grow-1 align-items-center justify-content-center py-2 h-100'>
-            <h1 className='text-white'>Bonjour, Je suis John DOE</h1>
+            <h1 className='text-white'>Bonjour,&nbsp;Je suis John DOE</h1>
             <h2 className='text-white'>Développer web full stack</h2>
 
             <a
@@ -65,7 +65,7 @@ export function Home() {
           id='apropos'
           
         >
-          <div className='container border shadow d-flex gap-1 justify-content-between bg-white'>
+          <div className='container border shadow d-flex gap-1 flex-wrap justify-content-between bg-white'>
             <div className='container'>
               <h2 className='border-bottom border-3 border-primary p-2 my-5'>
                 A propos

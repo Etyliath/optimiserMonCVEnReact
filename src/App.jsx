@@ -1,8 +1,8 @@
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
-import { Home } from './pages/Home'
+import { Home } from './pages/home'
 import { Legales } from './pages/Legales'
 import { Realizations } from './pages/Realizations'
-import { Blogs } from './pages/Blogs'
+import { Blog } from './pages/Blog'
 import { Services } from './pages/Services'
 import { Contact } from './pages/Contact'
 import { Header } from './components/Header'
@@ -44,10 +44,10 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: '/blogs',
+        path: '/blog',
         element: (
           <>
-            <Blogs />
+            <Blog />
           </>
         ),
       },
