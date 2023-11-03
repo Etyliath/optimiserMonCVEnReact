@@ -1,5 +1,5 @@
-import { Blog } from '../components/Blog'
-export function Blogs() {
+import { Article } from '../components/Article'
+export function Blog() {
   const blogs = [
     {
       id: 1,
@@ -77,7 +77,7 @@ export function Blogs() {
       </div>
       <div className='row align-items-center mt-5 mx-auto'>
         {blogs.map((blog) => (
-          <Blog
+          <Article
             key={blog.id}
             title={blog.title}
             image={blog.image}

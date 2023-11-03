@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-export function Blog({ title, image, publication, broadcast }) {
+export function Article({ title, image, publication, broadcast }) {
   return (
     <article
       className='col-lg-4 col-md-6 mb-4'
@@ -23,7 +23,7 @@ export function Blog({ title, image, publication, broadcast }) {
     </article>
   )
 }
-Blog.propTypes = {
+Article.propTypes = {
   image: PropTypes.string,
   broadcast: PropTypes.string,
   title: PropTypes.string,

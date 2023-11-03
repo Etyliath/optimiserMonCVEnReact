@@ -55,7 +55,7 @@ export function Header() {
                 <li className='nav-item'>
                   <NavLink
                     className='nav-link'
-                    to='/blogs'
+                    to='/blog'
                   >
                     Blog
                   </NavLink>

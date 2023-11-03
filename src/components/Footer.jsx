@@ -26,7 +26,7 @@ export function Footer() {
     <>
       <footer className='container-lg px-0 mt-auto'>
         <div className='pt-2'>
-          <div className='container-lg row align-items-center mx-auto'>
+          <div className='container-lg row align-items-start mx-auto'>
             <div className='col-lg-3 col-md-6 py-4'>
               <div className='d-flex flex-column text-left m-0'>
                 <h6 className='mb-1'>John DOE</h6>
@@ -38,9 +38,9 @@ export function Footer() {
                   Téléphone: 06 20 30 40
                 </p>
               </div>
-              <div className='d-flex'>
+              <div className='d-flex mt-3'>
                 <a
-                  className='mx-1 text-dark'
+                  className='mx-1 text-dark pe-2'
                   href='https://github.com/github-john-doe'
                   target='_blank'
                   rel='nofollow noopener noreferrer'
@@ -48,7 +48,7 @@ export function Footer() {
                   <i className='fa-brands fa-github fa-lg '></i>
                 </a>
                 <a
-                  className='mx-1 text-dark'
+                  className='mx-1 text-dark pe-2'
                   href='https://twitter.com/johndoe_game?lang=fr'
                   target='_blank'
                   rel='nofollow noopener noreferrer'
@@ -56,7 +56,7 @@ export function Footer() {
                   <i className='fa-brands fa-x-twitter fa-lg'></i>
                 </a>
                 <a
-                  className='mx-1 text-dark'
+                  className='mx-1 text-dark pe-2'
                   href='https://uk.linkedin.com/company/john-doe'
                   target='_blank'
                   rel='nofollow noopener noreferrer'
@@ -65,7 +65,8 @@ export function Footer() {
                 </a>
               </div>
             </div>
-            <div className='col-lg-3 col-md-6'>
+            <div className='col-lg-3 col-md-6 py-4'>
+            <h6 className='mb-1'>Les liens utiles</h6>
             <NavLink
                 className='nav-link'
                 to='/'
@@ -102,7 +103,8 @@ export function Footer() {
                 Mentions légales
               </NavLink>
             </div>
-            <div className='col-lg-3 col-md-6'>
+            <div className='col-lg-3 col-md-6 py-4'>
+            <h6 className='mb-1'>Mes dernières réalisations</h6>
             <NavLink
                 className='nav-link'
                 to='/realizations'
@@ -111,7 +113,8 @@ export function Footer() {
                 Réalisations
               </NavLink>
             </div>
-            <div className='col-lg-3 col-md-6'>
+            <div className='col-lg-3 col-md-6 py-4'>
+            <h6 className='mb-1'>Mes derniers articles</h6>
             <NavLink
                 className='nav-link'
                 to='/blogs'
