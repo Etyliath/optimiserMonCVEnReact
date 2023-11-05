@@ -84,11 +84,11 @@ export function Legales() {
               data-bs-parent='#accordionMentionsLegales'
             >
               <div className='accordion-body'>
-                <h2>Always Data</h2>
+                <h2>Edouard DA SILVA</h2>
                 <p className='m-0'>
-                  91 Rue du Faubours Saint-Honoré
+                  20 Rue le brix
                   <br />
-                  75008 Paris, France
+                  79000 Niort, France
                 </p>
                 <a
                   className='text-decoration-none mb-2'
