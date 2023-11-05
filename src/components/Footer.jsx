@@ -17,12 +17,12 @@ export function Footer() {
     return () => {
       window.removeEventListener('scroll', handler)
     }
-  })
+  },[])
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
   }
-  console.log(datas.articles.length)
+
   return (
     <>
       <footer className='container-lg px-0 mt-auto'>
@@ -102,6 +102,13 @@ export function Footer() {
               >
                 <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
                 Mentions légales
+              </NavLink>
+              <NavLink
+                className='nav-link'
+                to='/profil'
+              >
+                <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
+                Profil GitHub
               </NavLink>
             </div>
             <div className='col-lg-3 col-md-6 py-4'>

@@ -1,49 +1,24 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Skill } from '../components/Skill'
+import datas from '../datas.json'
 
 export function Home() {
-  const skills = [
-    {
-      id: 1,
-      name: 'HTML',
-      level: 90,
-      color: 'bg-danger',
-    },
-    {
-      id: 2,
-      name: 'CSS3',
-      level: 80,
-      color: 'bg-info',
-    },
-    {
-      id: 3,
-      name: 'JAVASCRIPT',
-      level: 70,
-      color: 'bg-warning',
-    },
-    {
-      id: 4,
-      name: 'PHP',
-      level: 60,
-      color: 'bg-success',
-    },
-    {
-      id: 5,
-      name: 'REACT',
-      level: 50,
-      color: 'bg-primary',
-    },
-  ]
+  
+  const skills = datas.skills
+
   return (
     <>
-      <main className='container-lg d-flex flex-column px-0' style={{background:'#F8F9FB'}}>
+      <main
+        className='container-lg d-flex flex-column px-0'
+        style={{ background: '#F8F9FB' }}
+      >
         <div
           className='container-lg'
           style={{
             background: 'url("/man-1839500_1280.jpg") no-repeat',
             height: '90vh',
             overflow: 'hidden',
-            backgroundSize:'cover',
+            backgroundSize: 'cover',
             backgroundColor: 'rgba(0,0,0,0.3)',
             backgroundBlendMode: 'soft-light',
           }}
@@ -63,7 +38,6 @@ export function Home() {
         <section
           className='container-lg p-5'
           id='apropos'
-          
         >
           <div className='container border shadow row gap-1 justify-content-between bg-white'>
             <div className='container col-lg-5 col-md-5 col-sm-6'>
