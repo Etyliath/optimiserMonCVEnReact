@@ -96,7 +96,7 @@ export function Legales() {
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  <i className='fa-solid fa-globe'></i>www.alwaysdata.com
+                  <i className='fa-solid fa-globe'></i>https://serveurweb.letreflea4feuilles.fr/
                 </a>
               </div>
             </div>
