@@ -103,6 +103,13 @@ export function Footer() {
                 <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
                 Mentions légales
               </NavLink>
+              <NavLink
+                className='nav-link'
+                to='/profil'
+              >
+                <i className='fa-solid fa-greater-than fa-xs p-1 text-primary'></i>
+                Profil GitHub
+              </NavLink>
             </div>
             <div className='col-lg-3 col-md-6 py-4'>
             <h6 className='mb-1'>Mes dernières réalisations</h6>
