@@ -8,10 +8,17 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-#react-helmet
+# react-helmet
 install react-helmet pour ajouter des balise <meta/>
 npm install --save react-helmet
 
-#react-router
+# react-router
 install react router
 npm install react-router-dom
+
+# server de developpement
+npm run dev
+
+# compiler la solution
+compile ma solution dans le répertoire /dist
+npm run build
