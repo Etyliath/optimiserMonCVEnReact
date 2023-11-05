@@ -11,6 +11,7 @@ import { PageError } from './pages/PageError'
 import { SingleArticle } from './pages/SingleArticle'
 import { Profil } from './pages/Profil'
 import { SingleProject } from './pages/SignleProject'
+import { ScrollToTop } from './components/SrollToTop'
 
 const router = createBrowserRouter([
   {
@@ -20,17 +21,42 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />,
+        element: (
+          <>
+            <Home /> <ScrollToTop />
+          </>
+        ),
       },
       {
         path: '/services',
-        element: <Services />,
+        element: (
+          <>
+            <Services />
+            <ScrollToTop />
+          </>
+        ),
       },
       {
         path: '/realizations',
         children: [
-          { path: '', element: <Realizations /> },
-          { path: ':id', element: <SingleProject /> },
+          {
+            path: '',
+            element: (
+              <>
+                <Realizations />
+                <ScrollToTop />
+              </>
+            ),
+          },
+          {
+            path: ':id',
+            element: (
+              <>
+                <SingleProject />
+                <ScrollToTop />
+              </>
+            ),
+          },
         ],
       },
       {
@@ -38,25 +64,50 @@ const router = createBrowserRouter([
         children: [
           {
             path: '',
-            element: <Blog />,
+            element: (
+              <>
+                <Blog />
+                <ScrollToTop />
+              </>
+            ),
           },
           {
             path: ':id',
-            element: <SingleArticle />,
+            element: (
+              <>
+                <ScrollToTop />
+                <SingleArticle />
+              </>
+            ),
           },
         ],
       },
       {
         path: '/contact',
-        element: <Contact />,
+        element: (
+          <>
+            <Contact />
+            <ScrollToTop />
+          </>
+        ),
       },
       {
         path: '/legales',
-        element: <Legales />,
+        element: (
+          <>
+            <Legales />
+            <ScrollToTop />
+          </>
+        ),
       },
       {
         path: '/profil',
-        element: <Profil />,
+        element: (
+          <>
+            <Profil />
+            <ScrollToTop />
+          </>
+        ),
       },
     ],
   },

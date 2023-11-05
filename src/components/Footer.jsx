@@ -17,12 +17,12 @@ export function Footer() {
     return () => {
       window.removeEventListener('scroll', handler)
     }
-  })
+  },[])
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
   }
-  console.log(datas.articles.length)
+
   return (
     <>
       <footer className='container-lg px-0 mt-auto'>
